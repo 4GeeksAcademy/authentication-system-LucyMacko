@@ -4,8 +4,9 @@ import ScrollToTop from "./component/scrollToTop";
 import { BackendURL } from "./component/backendURL";
 
 import { Home } from "./pages/home";
-import { Demo } from "./pages/demo";
-import { Single } from "./pages/single";
+import SignUp from "./pages/signup";
+import LogIn from "./pages/login";
+import Private from "./pages/private"
 import injectContext from "./store/appContext";
 
 import { Navbar } from "./component/navbar";
@@ -21,17 +22,16 @@ const Layout = () => {
 
     return (
         <div>
-            <BrowserRouter basename={basename}>
-                <ScrollToTop>
+            <BrowserRouter basename={basename}>                
                     <Navbar />
                     <Routes>
                         <Route element={<Home />} path="/" />
-                        <Route element={<Demo />} path="/demo" />
-                        <Route element={<Single />} path="/single/:theid" />
+                        <Route element={<SignUp />} path="/sign-up" />
+                        <Route element={<LogIn />} path="/login" />
+                        <Route element={<Private />} path="/private" />                                                
                         <Route element={<h1>Not found!</h1>} />
                     </Routes>
-                    <Footer />
-                </ScrollToTop>
+                    <Footer />                
             </BrowserRouter>
         </div>
     );

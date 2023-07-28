@@ -1,0 +1,6 @@
+#privateImage{
+    justify-content: center;
+    display: flex;
+    margin:auto;
+    border-radius: 15%;
+}

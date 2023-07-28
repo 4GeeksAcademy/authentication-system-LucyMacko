@@ -1,0 +1,12 @@
+#navbarColor{
+    background: #6f42c1;
+    color:antiquewhite
+}
+
+.btn{
+    color:antiquewhite;
+}
+
+.btn:hover{
+    color:palevioletred;
+}
