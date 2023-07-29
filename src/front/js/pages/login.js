@@ -1,6 +1,7 @@
 import React, {useState, useEffect, useContext} from "react";
 import { Context } from "../store/appContext";
 import { useNavigate } from "react-router-dom";
+import "../../styles/login.css";
 
 const LogIn = () => {
     const { store, actions } = useContext(Context);
@@ -28,11 +29,11 @@ const LogIn = () => {
     }
 
     return (
-        <div className="container-fluid">
+        <div className="container-fluid" id="loginContainer">
             <div>
-                <h1>Welcome Back 😃</h1>
+                <h1 className="my-5 text-center">Welcome Back 😃</h1>
             </div>
-            <div className="mb-3">
+            <div className="mb-3" id="bodyLogin">
                 <label htmlFor="exampleInputEmail1" className="form-label">Email address</label>
                 <input 
                 type="email" 

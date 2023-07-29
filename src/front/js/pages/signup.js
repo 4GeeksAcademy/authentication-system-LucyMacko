@@ -1,6 +1,7 @@
 import React, {useContext, useState} from "react"
 import { useNavigate } from "react-router-dom";
 import { Context } from "../store/appContext";
+import "../../styles/signup.css";
 
 const SignUp = () => {
 
@@ -37,11 +38,11 @@ const SignUp = () => {
 	}
 
     return (
-        <div className="container-fluid mx-5">
-            <div className="mx-5 my-5">
+        <div className="container-fluid" id="signUpContainer">
+            <div className="my-5 text-center">
                 <h1>Create your account</h1>
             </div>
-            <div className="mb-3">
+            <div className="mb-3" id="body">
                 <label htmlFor="exampleInputEmail1" className="form-label">Email address</label>
                 <input 
                 type="email" 

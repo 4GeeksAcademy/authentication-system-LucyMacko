@@ -12,9 +12,9 @@ export const Home = () => {
 
 	return (
 		<div className="text-center mt-5">
-			<h1>Welcome to this Authentication System Page</h1>
+			<h1 mb-3>Welcome to this Authentication System Page</h1>
 			<p className="my-5">In order to see it's magic, first you need to create your account and log in. After that you will be redirected to your private page!</p>
-			<button className="signUp" onClick={(() => navigate("/sign-up"))}>Create an account</button>			
+			<button className="signUp btn-lg mt-5" onClick={(() => navigate("/sign-up"))}>Create an account</button>			
 		</div>
 	);
 };
